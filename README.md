@@ -7,9 +7,9 @@ Using Strategy Design Pattern
 ```
 ---------- HEROS FIGHT --------------
 
-========================================
-SuperMan [HP: 100] X BatMan [HP: 100]
-========================================
+================================================
+SuperMan [HP: 100]  VS  BatMan [HP: 100]
+================================================
 
 SuperMan hits BatMan with Fire Attack
  ____  __  ____  ____
@@ -19,9 +19,9 @@ SuperMan hits BatMan with Fire Attack
 
 Damage: 10
 
-========================================
-BatMan [HP: 90] X SuperMan [HP: 100]
-========================================
+================================================
+SuperMan [HP: 100]  VS  BatMan [HP: 90]
+================================================
 
 BatMan hits SuperMan with Sword Attack
             /\
@@ -31,9 +31,9 @@ BatMan hits SuperMan with Sword Attack
 
 Damage: 30
 
-========================================
-BatMan [HP: 90] X SuperMan [HP: 70]
-========================================
+================================================
+SuperMan [HP: 70]  VS  BatMan [HP: 90]
+================================================
 
 BatMan hits SuperMan with Fire Attack
  ____  __  ____  ____
@@ -43,9 +43,9 @@ BatMan hits SuperMan with Fire Attack
 
 Damage: 10
 
-========================================
-SuperMan [HP: 60] X BatMan [HP: 90]
-========================================
+================================================
+SuperMan [HP: 60]  VS  BatMan [HP: 90]
+================================================
 
 SuperMan hits BatMan with Fire Attack
  ____  __  ____  ____
@@ -55,9 +55,9 @@ SuperMan hits BatMan with Fire Attack
 
 Damage: 10
 
-========================================
-BatMan [HP: 80] X SuperMan [HP: 60]
-========================================
+================================================
+SuperMan [HP: 60]  VS  BatMan [HP: 80]
+================================================
 
 BatMan hits SuperMan with Sword Attack
             /\
@@ -67,9 +67,9 @@ BatMan hits SuperMan with Sword Attack
 
 Damage: 30
 
-========================================
-BatMan [HP: 80] X SuperMan [HP: 30]
-========================================
+================================================
+SuperMan [HP: 30]  VS  BatMan [HP: 80]
+================================================
 
 BatMan hits SuperMan with Sword Attack
             /\
@@ -79,7 +79,8 @@ BatMan hits SuperMan with Sword Attack
 
 Damage: 30
 
-***********************
-SuperMan destroyed!
-***********************
+************************************************
+SuperMan Destroyed
+BatMan WIN!
+************************************************
 ```

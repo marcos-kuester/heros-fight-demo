@@ -4,10 +4,11 @@ import com.kuester.games.herosfight.domain.entities.HeroEntity;
 import com.kuester.games.herosfight.domain.interfaces.AttackBehaviorInterface;
 
 public class SwordAttack implements AttackBehaviorInterface {
-
+	private static final int DAMAGE = 30;
+	
 	@Override
 	public void performAttack(HeroEntity attacker, HeroEntity defender) {
-		defender.setDamage(30);
+		defender.setDamage(DAMAGE);
 	}
 
 	@Override
@@ -25,5 +26,10 @@ public class SwordAttack implements AttackBehaviorInterface {
 		attackImage.append("            \\/\n");
 		
 		return attackImage.toString();
+	}
+
+	@Override
+	public int getDamage() {
+		return DAMAGE;
 	}
 }

@@ -22,16 +22,7 @@ public class HerosFightApplication implements CommandLineRunner {
 		HeroEntity superman = new HeroEntity("SuperMan", 100, new FireAttack());
 		HeroEntity batman = new HeroEntity("BatMan", 100, new SwordAttack());
 		
-		superman.attack(batman);
-		
-		batman.attack(superman);
-		batman.setAttackBehavior(new FireAttack());
-		batman.attack(superman);
-		
-		superman.attack(batman);
-		
-		batman.setAttackBehavior(new SwordAttack());
-		batman.attack(superman);
-		batman.attack(superman);
+		FightRound fightRound = new FightRound(superman, batman);
+		fightRound.fight();
 	}
 }

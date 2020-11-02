@@ -13,14 +13,12 @@ public class HeroEntity {
 		this.setAttackBehavior(attackBehavior);
 	}
 	
-	public void attack(HeroEntity defender) {
-		System.out.println("========================================");
-		System.out.println(this.getName() + " [HP: " + this.getHp() + "] X " + defender.getName() + " [HP: " + defender.getHp() + "]");
-		System.out.println("========================================\n");		
-		System.out.println(this.getName() + " hits " + defender.getName() + " with " + this.attackBehavior.getAttackName());
-		System.out.println(this.attackBehavior.getAttackImage());
-		
+	public void attack(HeroEntity defender) {		
 		this.attackBehavior.performAttack(this, defender);
+	}
+	
+	public AttackBehaviorInterface getAttackBehavior() {
+		return this.attackBehavior;
 	}
 	
 	public void setAttackBehavior(AttackBehaviorInterface attackBehavior) {
@@ -40,13 +38,6 @@ public class HeroEntity {
 	}
 	
 	public void setDamage(int damage) {
-		System.out.println("Damage: " + damage + "\n");
 		this.hp = this.hp - damage;
-		
-		if (this.getHp() <= 0) {
-			System.out.println("***********************");
-			System.out.println(this.getName() + " destroyed!");
-			System.out.println("***********************");
-		}
 	}
 }
